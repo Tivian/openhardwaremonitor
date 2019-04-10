@@ -188,6 +188,7 @@ namespace OpenHardwareMonitor.Hardware.Mainboard {
 
         case Chip.IT8620E:
         case Chip.IT8628E:
+        case Chip.IT8686E:
         case Chip.IT8721F:
         case Chip.IT8728F:
         case Chip.IT8771E:
@@ -748,6 +749,29 @@ namespace OpenHardwareMonitor.Hardware.Mainboard {
           break;
         case Manufacturer.Gigabyte:
           switch (model) {
+            case Model.B360M_D3H_CF: // IT8686E
+              v.Add(new Voltage("CPU VCore", 0));
+              v.Add(new Voltage("+3.3V", 1, 6.49f, 10));
+              v.Add(new Voltage("+12V", 2, 10, 2));
+              v.Add(new Voltage("+5V", 3, 3, 2));
+              v.Add(new Voltage("VCCSA", 5));
+              v.Add(new Voltage("DRAM", 6));
+              v.Add(new Voltage("Standby +3.3V", 7, 10, 10));
+              v.Add(new Voltage("VBat", 8, 10, 10));
+              t.Add(new Temperature("System 1", 0));
+              t.Add(new Temperature("PCH", 1));
+              t.Add(new Temperature("CPU", 2));
+              t.Add(new Temperature("PCIEX16", 3));
+              t.Add(new Temperature("VRM MOS", 4));
+              t.Add(new Temperature("System 2", 5));
+              f.Add(new Fan("CPU", 0));
+              f.Add(new Fan("System 1", 1));
+              f.Add(new Fan("System 2", 2));
+              f.Add(new Fan("System 3", 3));
+              // c.Add(new Ctrl("CPU", 0));
+              // c.Add(new Ctrl("System 1", 1));
+              // c.Add(new Ctrl("System 2", 2));
+              break;
             case Model.H61M_DS2_REV_1_2: // IT8728F
             case Model.H61M_USB3_B3_REV_2_0: // IT8728F
               v.Add(new Voltage("VTT", 0));
