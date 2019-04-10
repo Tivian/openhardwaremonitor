@@ -127,7 +127,9 @@
     <Compile Include="Hardware\SMBIOS.cs" />
     <Compile Include="Hardware\Mainboard\SuperIOHardware.cs" />
     <Compile Include="Hardware\Nvidia\NVAPI.cs" />
-    <Compile Include="Hardware\Nvidia\NvidiaGPU.cs" />
+	<Compile Include="Hardware\Nvidia\NVML.cs" />
+	<Compile Include="Hardware\Nvidia\NvidiaGPU.cs" />
+    <Compile Include="Hardware\Nvidia\NvidiaGPULegacy.cs" />
     <Compile Include="Hardware\Nvidia\NvidiaGroup.cs" />
     <Compile Include="Hardware\Parameter.cs" />
     <Compile Include="Hardware\Sensor.cs" />
