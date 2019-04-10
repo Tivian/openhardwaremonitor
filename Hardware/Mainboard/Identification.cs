@@ -118,6 +118,8 @@ namespace OpenHardwareMonitor.Hardware.Mainboard {
           return Model.X58_SLI_Classified;
         case "965P-S3":
           return Model._965P_S3;
+        case "B360M D3H-CF":
+          return Model.B360M_D3H_CF;
         case "EP45-DS3R":
           return Model.EP45_DS3R;
         case "EP45-UD3R":

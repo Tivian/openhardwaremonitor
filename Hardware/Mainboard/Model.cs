@@ -44,6 +44,7 @@ namespace OpenHardwareMonitor.Hardware.Mainboard {
 
     // Gigabyte
     _965P_S3,
+    B360M_D3H_CF,
     EP45_DS3R,
     EP45_UD3R,
     EX58_EXTREME,
